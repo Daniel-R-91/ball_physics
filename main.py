@@ -187,7 +187,7 @@ if __name__ == "__main__":
     def get_ball_speed():
         while True:
             try:
-                speed = int(input("Enter ball speed (1 for slow, 2 for average and 3 for fast): "))
+                speed = int(input("Enter ball speed (1 for slow, 2 for medium and 3 for fast): "))
                 if 1 <= speed <= 3:
                     return speed
                 else:
@@ -199,4 +199,5 @@ if __name__ == "__main__":
     speed = get_ball_speed()
     game = Game(speed)
     game.game_active = True
+
     game.run()
